@@ -16,6 +16,8 @@ export async function POST(req: NextRequest) {
   }
 
   const token = await createSessionToken();
-  await setSessionCookie(token);
+  const proto = req.headers.get('x-forwarded-proto') || req.nextUrl.protocol.replace(':', '');
+  const isHttps = proto === 'https';
+  await setSessionCookie(token, isHttps);
   return NextResponse.json({ ok: true });
 }
