@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'node:fs';
 import path from 'node:path';
-import { getDb, RECORDINGS_DIR, type Recording } from '@/lib/db';
+import { getDb, RECORDINGS_DIR, type Recording } from '../../../../../lib/db';
 
 export const runtime = 'nodejs';
 

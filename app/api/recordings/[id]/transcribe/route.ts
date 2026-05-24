@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getDb, type Recording } from '@/lib/db';
-import { transcribeRecording } from '@/lib/whisper';
+import { getDb, type Recording } from '../../../../../lib/db';
+import { transcribeRecording } from '../../../../../lib/whisper';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';

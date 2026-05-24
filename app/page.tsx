@@ -1,4 +1,4 @@
-import RecorderApp from '@/components/RecorderApp';
+import RecorderApp from '../components/RecorderApp';
 
 export default function HomePage() {
   return <RecorderApp />;

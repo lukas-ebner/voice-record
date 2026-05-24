@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { randomUUID } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import { getDb, RECORDINGS_DIR, type Recording } from '@/lib/db';
-import { transcribeRecording } from '@/lib/whisper';
+import { getDb, RECORDINGS_DIR, type Recording } from '../../../lib/db';
+import { transcribeRecording } from '../../../lib/whisper';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
